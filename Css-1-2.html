@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px); 
+            grid-gap: 10px; 
+            justify-content: center; 
+        }
+        .rectangle-1,.rectangle-2,.rectangle-3,
+        .rectangle-4,.rectangle-5,.rectangle-6,.rectangle-7,.rectangle-8,
+        .rectangle-9{
+            width: 100px;
+            height: 60px;
+            border: solid rgb(85, 212, 85);
+            color: #fff;
+            text-align: center;
+            line-height: 60px;
+            font-size: 18px;
+        }
+        .rectangle-1,.rectangle-2,.rectangle-4,.rectangle-5,.rectangle-8{
+            border-radius: 5%;
+        }
+        .rectangle-3,.rectangle-6{
+            border-radius: 30%;
+        }
+        .rectangle-7{
+            border-radius: 70%;
+        }
+        .rectangle-9{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rectangle-1"></div>
+        <div class="rectangle-2"></div>
+        <div class="rectangle-3"></div>
+        <div class="rectangle-4"></div>
+        <div class="rectangle-5"></div>
+        <div class="rectangle-6"></div>
+        <div class="rectangle-7"></div>
+        <div class="rectangle-8"></div>
+        <div class="rectangle-9"></div>
+    </div>
+</body>
+</html>

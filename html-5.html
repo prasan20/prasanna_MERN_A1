@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 450px;
+      text-align: center;
+      box-shadow: white;
+    }
+
+    .header {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0073e6; 
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    table tr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    table td {
+      width: 100%;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .form-container textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ddd;
+      height: 100px; 
+    }
+
+    .form-container select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .form-container label.checkbox-label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .form-container .languages-known {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-container .languages-known label.checkbox-label {
+      margin-right: 5px;
+    }
+    
+    .right-align {
+      text-align: right;
+    }
+
+  </style>
+</head>
+<body>
+<div class="form-container">
+  <div class="header">Registration Form</div>
+  <form>
+    <table>
+      <tr>
+        <td><label for="first-name">First Name</label></td>
+        <td><input type="text" id="first-name" name="first_name"></td>
+      </tr>
+      <tr>
+        <td><label for="last-name">Last Name</label></td>
+        <td><input type="text" id="last-name" name="last_name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" id="email" name="email"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password</label></td>
+        <td><input type="password" id="password" name="password"></td>
+      </tr>
+      <tr>
+        <td><label>Gender</label></td>
+        <td>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="age">Age</label></td>
+        <td><input type="text" id="age" name="age"></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone Number</label></td>
+        <td><input type="text" id="phone" name="phone"></td>
+      </tr>
+      <tr>
+        <td><label for="address">Address</label></td>
+        <td><textarea id="address" name="address"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="state">State</label></td>
+        <td><input type="text" id="state" name="state"></td>
+      </tr>
+      <tr>
+        <td><label for="country">Country</label></td>
+        <td>
+          <select id="country" name="country">
+            <option value="">Choose Your Country</option>
+            <option value="India">United States</option>
+            <option value="USA">Canada</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Australia">Australia</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="languages-known" class="checkbox-label">Languages Known</label></td>
+        <td class="languages-known">
+          <input type="checkbox" id="english" name="english" value="english">
+          <label for="english" class="checkbox-label">English</label>
+          <input type="checkbox" id="kannada" name="kannada" value="kannada">
+          <label for="kannada" class="checkbox-label">Kannada</label>
+          <input type="checkbox" id="hindi" name="hindi" value="hindi">
+          <label for="hindi" class="checkbox-label">Hindi</label>
+          <input type="checkbox" id="telugu" name="telugu" value="telugu">
+          <label for="telugu" class="checkbox-label">Telugu</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" id="declare" name="declare" value="declare">
+          <label for="declare" class="checkbox-label">Hereby I declare all the given details are true</label>
+        </td>
+      </tr>
+      <tr class="right-align">
+        <td colspan="2">
+          <a href="https://ethnus.com/" target="_blank">Log in to Ethnus website</a>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+</body>
+</html>

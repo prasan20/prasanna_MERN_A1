@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mysidenav a{
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 15px 5px 0;
+    }
+    #mysidenav a:hover{
+        left: 0;
+    }
+    #about{
+        top: 20px;
+        background-color: #4CAF50;
+    }
+    #blog{
+        top: 80px;
+        background-color: #2196f3;
+    }
+    #projects{
+        top: 140px;
+        background-color: #f44336;
+    }
+    #contact{
+        top: 200px;
+        background-color: #555;
+    }
+</style>
+<body>
+    <div id="mysidenav" class="sidenav">
+        <a href="#" id="about">About</a>
+        <a href="#" id="blog">blog</a>
+        <a href="#" id="projects">projects</a>
+        <a href="#" id="contact">contact</a>
+    </div>
+    <div class="container" style="margin-left:190px;">
+        <h1> Hoverable Sidenav buttons</h1>
+        <p> Hover over the buttons in the left side navigation to open them</p>
+    </div>
+</body>
+</html>
